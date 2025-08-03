@@ -1,12 +1,12 @@
-Парсер сайта https://www.b2b-center.ru
-Поддерживает запись результатов в csv:
-  python main.py --max 20 --output tenders.csv
-или в базу sqlite:
-  python main.py --max 10 --output tenders.db --format sqlite
-Так же есть возможность взаимодействия через апи:
-  http://hostname/tenders?limit=15 - спарсит 15 тендеров с сайта
-  http://hostname/tenders/cache?limit=25 - вернёт 25 тендеров, спаршеных ранее в базу sqlite
-Что можно улучшить:
+Парсер сайта https://www.b2b-center.ru  
+Поддерживает запись результатов в csv:  
+  python main.py --max 20 --output tenders.csv  
+или в базу sqlite:  
+  python main.py --max 10 --output tenders.db --format sqlite  
+Так же есть возможность взаимодействия через апи:  
+  http://hostname/tenders?limit=15 - спарсит 15 тендеров с сайта  
+  http://hostname/tenders/cache?limit=25 - вернёт 25 тендеров, спаршеных ранее в базу sqlite  
+Что можно улучшить:  
   - Парсить больше данных
   - Вынести данные по категориям и закупочным позициям в отдельные таблицы (сейчас они записываются в формате JSON)
   - Парсить более 1 страницы (без регистрации максимум 1 страница), соответственно добавить возможность авторизации на сайте
